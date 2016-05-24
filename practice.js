@@ -4,9 +4,12 @@
 //Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
 
   //Code here
+var me = {
+  name: "Tony",
+  age: 39
+};
 
-
-
+alert(me.name);
 
 //NEXT PROBLEM
 
@@ -16,17 +19,42 @@
 //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
   //Code here
-
+  var favoriteThings = {
+    band: "U2",
+    food: "pizza",
+    person: "mom",
+    book: "A Christmas Carol",
+    movie: "ShawShank Redemption",
+    holiday: "Christmas"
+  };
 
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
   //Code here
-
+  var favoriteThings = {
+    band: "U2",
+    food: "pizza",
+    person: "mom",
+    book: "A Christmas Carol",
+    movie: "ShawShank Redemption",
+    holiday: "Christmas",
+    car: "Ferrai",
+    brand: "JJ"
+  };
 
 //Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key in your favoriteThings object to be '50 Shades of Gray'.
 
   //Code here
-
+  var favoriteThings = {
+    band: "U2",
+    food: "Lettuce",
+    person: "mom",
+    book: "50 Shades of Gray",
+    movie: "ShawShank Redemption",
+    holiday: "Christmas",
+    car: "Ferrai",
+    brand: "JJ"
+  };
 
 
 
@@ -43,6 +71,24 @@ Using dot notation, add another key (or property) to your backPack object
 that is named color, with the value being the color of your backpack. */
 
   //Code here
+var backPack = {
+}
+var item = 'firstPocket';
+
+for (var item in backPack){
+  backPack[item];
+  backpack[item] = 'chapstick';
+  console.log(backPack[item]);
+}
+
+
+//object[property_name] = set;
+
+
+// var foo = myForm["foo[]"]; // correct syntax
+// for (var i = 0; i < 10; i++) {
+//   someFunction(myForm["myControlNumber" + i]);
+// }
 
 //After you do the above, alert your entire backPack object.
 
